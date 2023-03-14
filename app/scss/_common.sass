@@ -1,0 +1,74 @@
+body
+	min-width: 320px
+	color: $b
+	position: relative
+	height: auto
+	font-size: 14px
+	overflow-x: hidden
+	background-color: $w
+	+reg
+
+.banner-stroke__color
+	border: 1px solid $b-46
+
+a
+	text-decoration: none
+
+.fa-solid
+	font-size: 1.25rem
+	color: $b
+	line-height: 100%
+
+.banner__content
+	position: relative
+	overflow: hidden
+
+	.banner__decor
+		position: absolute
+		right: -130px
+		overflow: hidden
+		top: 0
+		transition: right 0.7s ease 0s
+		display: flex
+		align-items: center
+		justify-content: center
+
+		img
+			height: 17px
+
+	a
+		text-decoration: none
+
+	span
+		color: $w
+		font-size: 12px
+		background-color: $green
+		line-height: 140%
+
+	.banner__decor-item
+		background: linear-gradient(250.31deg, #1AB700 1.36%, #FFFFFF 100%)
+		border-radius: 0px 0px 0px 8px
+		width: 20px
+		height: 20px
+
+	&:hover
+		.banner__decor
+			right: 1px
+
+.nav-link
+	color: $b
+	+r(576)
+		font-size: 10px
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+	color: $green
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus
+	color: $green
+
+.nav-link:hover, .nav-link:focus
+	color: $green
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+	background: linear-gradient(180deg, #01AD0F 58.49%, rgb(181, 255, 185) 119.26%)
+.nav
+	justify-content: center
